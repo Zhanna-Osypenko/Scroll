@@ -23,7 +23,7 @@ const Card = ({icon: Icon, title, backgroundImage}) => {
       ></div>
 
       <div className="relative flex flex-col items-center justify-center gap-16">
-        <Icon className="h-48 w-48 text-blue-100 group-hover:text-blue-400" />
+        <Icon className="h-24 w-24 text-blue-100 group-hover:text-blue-400" />
         <h1 className="text-xl lg:text-6xl">{title}</h1>
       </div>
     </div>

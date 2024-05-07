@@ -15,17 +15,18 @@ const Carousel = ({cards}) => {
   }, []) // Создаем дубликат слайда только при монтировании компонента
 
   return (
-    <div className="logos">
-      <div className="logos-slide" ref={slideRef}>
-        {/* Дублируем слайды для создания эффекта бесконечной карусели */}
-        {cards.map((card, index) => (
-          <Card
-            key={index}
-            icon={card.icon}
-            title={card.title}
-            backgroundImage={card.backgroundImage}
-          />
-        ))}
+    <div className="container">
+      <div className="logos">
+        <div className="logos-slide" ref={slideRef}>
+          {cards.map((card, index) => (
+            <Card
+              key={index}
+              icon={card.icon}
+              title={card.title}
+              backgroundImage={card.backgroundImage}
+            />
+          ))}
+        </div>
       </div>
     </div>
   )
