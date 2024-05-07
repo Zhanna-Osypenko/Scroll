@@ -10,7 +10,7 @@ import {ServiceData} from "../constants"
 const ActiveSlider = () => {
   return (
     <div className="flex items-center justify-center flex-col h-screen bg-gray-900">
-      <h1 className="font-semibold text-yellow-500 text-4xl">
+      <h1 className="font-semibold text-yellow-500 text-3xl md:text-4xl lg:text-5xl ">
         Looking for something... specific?
       </h1>
       <p className="text-white text-xl pb-8 pt-4">Here is what we suggest</p>
@@ -40,10 +40,9 @@ const ActiveSlider = () => {
                 style={{backgroundImage: `url(${item.backgroundImage})`}}
               ></div>
               <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50"></div>
-              <div className="relative flex flex-col gap-3">
-                <item.icon className="text-blue-100 group-hover:text-blue-400 w-[32px] h-[32px]" />
-                <h1 className="text-xl lg:text-2xl">{item.title}</h1>
-                <p className="lg:text-[18px]">{item.content}</p>
+              <div className="relative flex flex-col items-center justify-center gap-16">
+                <item.icon className="text-blue-100 group-hover:text-blue-400 w-[48px] h-[48px]" />
+                <h1 className="text-xl lg:text-6xl">{item.title}</h1>
               </div>
             </div>
           </SwiperSlide>

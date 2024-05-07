@@ -1,13 +1,16 @@
 import React from "react"
 import "./style/App.css"
-import Header from "./components/Header"
 import ActiveSlider from "./components/ActiveSlider"
+import Carousel from "./components/Carousel/Carousel"
+import {ServiceData} from "./constants"
+// import SuggestionsBanner from "./components/SuggestionsBanner/SuggestionsBanner"
 
 const App = () => {
   return (
     <>
-      <Header />
       <ActiveSlider />
+      <Carousel cards={ServiceData} />
+      {/* <SuggestionsBanner /> */}
     </>
   )
 }
