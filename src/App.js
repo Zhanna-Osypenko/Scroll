@@ -1,8 +1,9 @@
 import React from "react"
 import "./style/App.css"
+import {ServiceData} from "./constants"
 import ActiveSlider from "./components/ActiveSlider"
 import Carousel from "./components/Carousel/Carousel"
-import {ServiceData} from "./constants"
+import QuoteBanner from "./components/QuoteBanner/QuoteBanner"
 // import SuggestionsBanner from "./components/SuggestionsBanner/SuggestionsBanner"
 
 const App = () => {
@@ -10,7 +11,7 @@ const App = () => {
     <>
       <ActiveSlider />
       <Carousel cards={ServiceData} />
-      {/* <SuggestionsBanner /> */}
+      <QuoteBanner />
     </>
   )
 }
