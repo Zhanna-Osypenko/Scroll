@@ -6,12 +6,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* background-color: rgb(17, 24, 39); */
 }
 
-.container {
+/* .container {
   max-width: 1133px;
   margin: 0 auto;
-}
+} */
 
 /* =========================== */
 /* ========= Header ========== */
@@ -30,8 +31,6 @@
 /* ========= Carousel ======== */
 /* =========================== */
 
-/* Carousel.css */
-
 @keyframes slide {
   from {
     transform: translateX(0);
@@ -42,18 +41,18 @@
 }
 
 .logos {
-  overflow: hidden;
+  /* overflow: hidden;
   padding: 60px 0;
   background: white;
   white-space: nowrap;
-  position: relative;
+  position: relative; */
 }
 
 .logos:before,
 .logos:after {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 50px;
   height: 100%;
   content: "";
   z-index: 2;
@@ -61,12 +60,12 @@
 
 .logos:before {
   left: 0;
-  /* background: linear-gradient(to left, rgba(255, 255, 255, 0), white); */
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), black);
 }
 
 .logos:after {
   right: 0;
-  /* background: linear-gradient(to right, rgba(255, 255, 255, 0), white); */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
 }
 
 .logos:hover .logos-slide {
